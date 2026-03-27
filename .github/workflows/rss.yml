@@ -2,8 +2,7 @@ name: Generate Artmore RSS
 
 on:
   schedule:
-    # 매일 자정과 아침 9시에 실행 (UTC 기준 15, 0시)
-    - cron: '0 0,15 * * *'
+    - cron: '0 * * * *' # 매시간 0분에 실행
   workflow_dispatch:
 
 jobs:
